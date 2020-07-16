@@ -1,0 +1,200 @@
+/* navbar */
+.navbar{
+  position: relative;
+  z-index: 1;
+}
+.navbar-brand{
+    font-family: 'Viga', sans-serif;
+    font-size: 32px;
+}
+
+.logo{
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container{
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4{
+  color: white;
+  text-align: center center;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Viga', sans-serif;
+}
+
+.jumbotron .disp{
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+  font-size: 18px;
+}
+
+.jumbotron img{
+  width: 100px;
+  margin-top: 10%;
+}
+
+/* about */
+.head{
+  margin-top: 50px;
+  background-color:#8585ec;
+  margin-left: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.head h2{
+  color: white;
+}
+.about {
+  margin-top:25PX;
+  margin-left: 50PX;
+}
+
+.about h2{
+  margin-left: 20px;
+}
+.about p {
+  margin-bottom: 50px;
+}
+
+/* panel info */
+
+.panel-info {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  margin-top: -100px;
+  border-radius: 15px;
+
+  background-color: white;
+  padding: 20px ;
+}
+
+.panel-info img{
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.panel-info h4{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+margin-top: 15px;
+}
+
+.panel-info p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: -10px;
+  font-weight: 200;
+}
+.panel-info span {
+  font-size: 11px;
+  color: #acacac;
+  margin-top: -20px;
+  font-weight: 200;
+}
+
+/* Working space */
+
+.working{
+  margin-top: 50PX;
+  text-align: center;
+}
+
+
+.working p{
+  font-size: 24px;
+  margin-top: 25px;
+}
+.working h4{
+  font-size: 52PX;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+/* kelengkapan */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 45px;
+
+
+    /* text-decoration-color: bisque !important; */
+}
+
+.tombol a{
+  color: white !important;
+}
+.tombol a:hover{
+    border-bottom: none;
+  }
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  .navbar-brand, .nav-link{
+    color: white !important;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+  }
+  .nav-link{
+      text-transform: uppercase;
+      margin-right: 25px;
+  }
+
+  .working{
+    margin-top: 50PX;
+    text-align: left;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: auto;
+    border-bottom: 3px solid #0b63dc;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .jumbotron{
+    height: 640px;
+    margin-top: -75px;
+  }
+
+  .jumbotron .display-4{
+    font-size: 62px;
+  }
+
+  .jumbotron img{
+    width: 200px;
+    margin-top: 5%;
+  }
+  .jumbotron .disp{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+  }
+
+}
